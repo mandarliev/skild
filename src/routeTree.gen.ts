@@ -10,7 +10,10 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+<<<<<<< HEAD
 import { Route as _authSignUpSplatRouteImport } from './routes/__auth/sign-up.$'
+=======
+>>>>>>> fe8b04e (tf)
 import { Route as _authSignInSplatRouteImport } from './routes/__auth/sign-in.$'
 
 const IndexRoute = IndexRouteImport.update({
@@ -18,11 +21,14 @@ const IndexRoute = IndexRouteImport.update({
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+<<<<<<< HEAD
 const _authSignUpSplatRoute = _authSignUpSplatRouteImport.update({
   id: '/__auth/sign-up/$',
   path: '/sign-up/$',
   getParentRoute: () => rootRouteImport,
 } as any)
+=======
+>>>>>>> fe8b04e (tf)
 const _authSignInSplatRoute = _authSignInSplatRouteImport.update({
   id: '/__auth/sign-in/$',
   path: '/sign-in/$',
@@ -32,17 +38,24 @@ const _authSignInSplatRoute = _authSignInSplatRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/sign-in/$': typeof _authSignInSplatRoute
+<<<<<<< HEAD
   '/sign-up/$': typeof _authSignUpSplatRoute
+=======
+>>>>>>> fe8b04e (tf)
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/sign-in/$': typeof _authSignInSplatRoute
+<<<<<<< HEAD
   '/sign-up/$': typeof _authSignUpSplatRoute
+=======
+>>>>>>> fe8b04e (tf)
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/__auth/sign-in/$': typeof _authSignInSplatRoute
+<<<<<<< HEAD
   '/__auth/sign-up/$': typeof _authSignUpSplatRoute
 }
 export interface FileRouteTypes {
@@ -51,12 +64,24 @@ export interface FileRouteTypes {
   fileRoutesByTo: FileRoutesByTo
   to: '/' | '/sign-in/$' | '/sign-up/$'
   id: '__root__' | '/' | '/__auth/sign-in/$' | '/__auth/sign-up/$'
+=======
+}
+export interface FileRouteTypes {
+  fileRoutesByFullPath: FileRoutesByFullPath
+  fullPaths: '/' | '/sign-in/$'
+  fileRoutesByTo: FileRoutesByTo
+  to: '/' | '/sign-in/$'
+  id: '__root__' | '/' | '/__auth/sign-in/$'
+>>>>>>> fe8b04e (tf)
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   _authSignInSplatRoute: typeof _authSignInSplatRoute
+<<<<<<< HEAD
   _authSignUpSplatRoute: typeof _authSignUpSplatRoute
+=======
+>>>>>>> fe8b04e (tf)
 }
 
 declare module '@tanstack/react-router' {
@@ -68,6 +93,7 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+<<<<<<< HEAD
     '/__auth/sign-up/$': {
       id: '/__auth/sign-up/$'
       path: '/sign-up/$'
@@ -75,6 +101,8 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof _authSignUpSplatRouteImport
       parentRoute: typeof rootRouteImport
     }
+=======
+>>>>>>> fe8b04e (tf)
     '/__auth/sign-in/$': {
       id: '/__auth/sign-in/$'
       path: '/sign-in/$'
@@ -88,7 +116,10 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   _authSignInSplatRoute: _authSignInSplatRoute,
+<<<<<<< HEAD
   _authSignUpSplatRoute: _authSignUpSplatRoute,
+=======
+>>>>>>> fe8b04e (tf)
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
