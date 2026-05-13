@@ -21,9 +21,14 @@ const SkillCard = ({
   const [copied, setCopied] = useState(false);
 
   const handleCopy = () => {
-    navigator.clipboard.writeText(installCommand);
+    try {
+       navigator.clipboard.writeText(installCommand);
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
+    } catch (error) {
+      setCopied(false);
+    }
+   
   };
   return (
     <article className="skill-card">
@@ -53,7 +58,7 @@ const SkillCard = ({
               <p>{new Date(createdAt as string).toLocaleDateString()}</p>
             </div>
           </div>
-          <p className="category">{category}</p>
+          <p>{createdAt ? new Date(createdAt).toLocaleDateString() : "Unknown date"}</p>
         </div>
         <div className="summary">
           <Link to="/skills" className="title-link">
