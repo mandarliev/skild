@@ -1,0 +1,67 @@
+/**
+ * Dummy skills data
+ * Follows the `SkillRecord` interface defined in `type.d.ts`.
+ */
+
+export const dummySkills: SkillRecord[] = [
+  {
+    id: "skill-001",
+    title: "Write Code",
+    slug: "write-code",
+    description: "Compose, refactor, and maintain code in multiple languages.",
+    category: "Development",
+    tags: ["coding", "programming", "refactoring"],
+    installCommand: "npm i -g write-code-tool",
+    createdAt: "2024-01-10T12:00:00.000Z",
+    authorClerkId: null,
+    authorEmail: "alice@example.com",
+  },
+  {
+    id: "skill-002",
+    title: "Design UI",
+    slug: "design-ui",
+    description: "Create user interface designs and interactive prototypes.",
+    category: "Design",
+    tags: ["ui", "ux", "prototyping"],
+    installCommand: "pnpm dlx shadcn@latest add button",
+    createdAt: "2024-02-15T09:30:00.000Z",
+    authorClerkId: "clerk_12345",
+    authorEmail: "bob@example.com",
+  },
+  {
+    id: "skill-003",
+    title: "Deploy App",
+    slug: "deploy-app",
+    description: "Deploy applications to cloud providers and manage releases.",
+    category: "DevOps",
+    tags: ["deployment", "ci/cd", "cloud"],
+    installCommand: "npm run deploy",
+    createdAt: null,
+    authorClerkId: null,
+    authorEmail: "devops@example.com",
+  },
+  {
+    id: "skill-004",
+    title: "Test Automation",
+    slug: "test-automation",
+    description: "Write and run automated tests, from unit to end-to-end.",
+    category: "Quality Assurance",
+    tags: ["testing", "automation", "e2e"],
+    installCommand: "npm i -D jest @testing-library/react",
+    createdAt: "2023-11-05T16:20:00.000Z",
+    authorClerkId: "clerk_67890",
+    authorEmail: null,
+  },
+  {
+    id: "skill-005",
+    title: "Optimize Performance",
+    slug: "optimize-performance",
+    description: "Profile applications and implement performance improvements.",
+    category: "Performance",
+    tags: ["profiling", "optimization", "performance"],
+    installCommand: "npm run build && npm run analyze",
+    createdAt: "2024-03-01T08:45:00.000Z",
+    authorClerkId: null,
+    authorEmail: "carol@example.com",
+  },
+];
