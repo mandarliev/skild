@@ -1,0 +1,7 @@
+# This is a file for you to write an un-named mutation. 
+# Only one un-named mutation is allowed per file.
+mutation {
+  skill_insert(
+    data: {id: "11111111222233334444555555555558", authorClerkId: "user_3Dfk1EmgzAjEKzgjLwDt60JRDrN", createdAt: "2026-05-15T13:44:20.590Z", description: "Profile applications and implement performance improvements.", installCommand: "npm run build && npm run analyze", promptConfig: "You are a professional performance optimization engineer", tags: ["ai-agent", "engineering"], title: "Optimize Performance", usageExample: "Review the code and optimize it"}
+  )
+}

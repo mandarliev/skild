@@ -1,0 +1,91 @@
+[debug] [2026-05-15T14:02:47.525Z] ----------------------------------------------------------------------
+[debug] [2026-05-15T14:02:47.527Z] Command:       /usr/local/bin/node /Users/mandarliev/.npm/_npx/ba4f1959e38407b5/node_modules/.bin/firebase emulators:start --project skild-28e8b
+[debug] [2026-05-15T14:02:47.528Z] CLI Version:   15.18.0
+[debug] [2026-05-15T14:02:47.528Z] Platform:      darwin
+[debug] [2026-05-15T14:02:47.528Z] Node Version:  v24.14.0
+[debug] [2026-05-15T14:02:47.528Z] Time:          Fri May 15 2026 17:02:47 GMT+0300 (Eastern European Summer Time)
+[debug] [2026-05-15T14:02:47.528Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-05-15T14:02:48.441Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-05-15T14:02:48.441Z] > authorizing via signed-in user (dimitar.mandarliev@gmail.com)
+[info] i  emulators: Starting emulators: dataconnect {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: dataconnect"}}
+[debug] [2026-05-15T14:02:48.656Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2026-05-15T14:02:48.656Z] [dataconnect.postgres] postgres server for dataconnect only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2026-05-15T14:02:48.656Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"dataconnect":[{"address":"127.0.0.1","family":"IPv4","port":9399},{"address":"::1","family":"IPv6","port":9399}],"dataconnect.postgres":[{"address":"127.0.0.1","family":"IPv4","port":5432}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2026-05-15T14:02:48.660Z] Write emulator hub locator at /var/folders/sm/2v0tft2j7w5cwtns362hkyjc0000gn/T/hub-skild-28e8b.json
+[debug] [2026-05-15T14:02:48.665Z] defaultcredentials: writing to file /Users/mandarliev/.config/firebase/dimitar_mandarliev_gmail.com_application_default_credentials.json
+[debug] [2026-05-15T14:02:48.909Z] I0515 17:02:48.903932   88898 control.go:100] [projects/emulator/locations/emulator/services/skild-28e8b-service 8604] UpdateResources(): done
+Main schema: sources: schema/schema.gql [528B] 
+Connector "example": sources: 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0515 17:02:48.903932   88898 control.go:100] [projects/emulator/locations/emulator/services/skild-28e8b-service 8604] UpdateResources(): done\nMain schema: sources: schema/schema.gql [528B] \nConnector \"example\": sources: \n"}}
+[debug] [2026-05-15T14:02:48.909Z] defaultcredentials: writing to file /Users/mandarliev/.config/firebase/dimitar_mandarliev_gmail.com_application_default_credentials.json
+[debug] [2026-05-15T14:02:48.919Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"dataconnect"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2026-05-15T14:02:48.920Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"dataconnect"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2026-05-15T14:02:48.920Z] Starting SQL Connect Emulator with command {"binary":"/Users/mandarliev/.cache/firebase/emulators/dataconnect-emulator-3.4.8","args":["--logtostderr","-v=2","dev","--listen=127.0.0.1:9399,[::1]:9399","--config_dir=/Users/mandarliev/Desktop/a/skild/dataconnect","--enable_output_schema_extensions=true","--enable_output_generated_sdk=true"],"optionalArgs":["listen","config_dir","enable_output_schema_extensions","enable_output_generated_sdk"],"joinArgs":true,"shell":false,"port":9399} {"metadata":{"emulator":{"name":"dataconnect"},"message":"Starting SQL Connect Emulator with command {\"binary\":\"/Users/mandarliev/.cache/firebase/emulators/dataconnect-emulator-3.4.8\",\"args\":[\"--logtostderr\",\"-v=2\",\"dev\",\"--listen=127.0.0.1:9399,[::1]:9399\",\"--config_dir=/Users/mandarliev/Desktop/a/skild/dataconnect\",\"--enable_output_schema_extensions=true\",\"--enable_output_generated_sdk=true\"],\"optionalArgs\":[\"listen\",\"config_dir\",\"enable_output_schema_extensions\",\"enable_output_generated_sdk\"],\"joinArgs\":true,\"shell\":false,\"port\":9399}"}}
+[info] i  dataconnect: SQL Connect Emulator logging to dataconnect-debug.log {"metadata":{"emulator":{"name":"dataconnect"},"message":"SQL Connect Emulator logging to \u001b[1mdataconnect-debug.log\u001b[22m"}}
+[info] i  dataconnect: Started up Postgres server, listening on {"address":"127.0.0.1","family":"IPv4","port":5432} {"metadata":{"emulator":{"name":"dataconnect"},"message":"Started up Postgres server, listening on {\"address\":\"127.0.0.1\",\"family\":\"IPv4\",\"port\":5432}"}}
+[debug] [2026-05-15T14:02:48.938Z] [SQL Connect] Connecting to postgres://127.0.0.1:5432/skild-28e8b-database?sslmode=disable}...
+[debug] [2026-05-15T14:02:48.940Z] >>> [apiv2][query] POST http://127.0.0.1:9399/emulator/configure [none]
+[debug] [2026-05-15T14:02:48.940Z] >>> [apiv2][body] POST http://127.0.0.1:9399/emulator/configure {"connectionString":"postgres://127.0.0.1:5432/skild-28e8b-database?sslmode=disable","database":"skild-28e8b-database","serviceId":"skild-28e8b-service"}
+[debug] [2026-05-15T14:02:48.942Z] *** [apiv2] error from fetch(http://127.0.0.1:9399/emulator/configure, {"headers":{},"method":"POST","body":"{\"connectionString\":\"postgres://127.0.0.1:5432/skild-28e8b-database?sslmode=disable\",\"database\":\"skild-28e8b-database\",\"serviceId\":\"skild-28e8b-service\"}"}): FetchError: request to http://127.0.0.1:9399/emulator/configure failed, reason: connect ECONNREFUSED 127.0.0.1:9399
+[debug] [2026-05-15T14:02:48.943Z] [SQL Connect] Retrying connectToPostgress call (1 of 3 attempts): SQL Connect emulator: FirebaseError: Failed to make request to http://127.0.0.1:9399/emulator/configure
+[debug] [2026-05-15T14:02:48.953Z] I0515 17:02:48.952762   88899 load.go:31] Reloading schema and connectors...
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0515 17:02:48.952762   88899 load.go:31] Reloading schema and connectors...\n"}}
+[debug] [2026-05-15T14:02:48.962Z] I0515 17:02:48.962159   88899 control.go:100] [projects/emulator/locations/emulator/services/skild-28e8b-service 4d5e] UpdateResources(): done
+Main schema: sources: schema/schema.gql [528B] 
+Connector "example": sources: 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0515 17:02:48.962159   88899 control.go:100] [projects/emulator/locations/emulator/services/skild-28e8b-service 4d5e] UpdateResources(): done\nMain schema: sources: schema/schema.gql [528B] \nConnector \"example\": sources: \n"}}
+[debug] [2026-05-15T14:02:48.969Z] E0515 17:02:48.968246   88899 load.go:95] Errors generating SDK: [connector "example"]: invalid Data Connect Connector no query found in connector
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"E0515 17:02:48.968246   88899 load.go:95] Errors generating SDK: [connector \"example\"]: invalid Data Connect Connector no query found in connector\n"}}
+[debug] [2026-05-15T14:02:48.971Z] I0515 17:02:48.971032   88899 collector.go:107] schema extensions wrote into "/Users/mandarliev/Desktop/a/skild/dataconnect/.dataconnect/schema"
+Generated sources: main/relation.gql [6578B] main/query.gql [2404B] main/mutation.gql [6444B] main/implicit.gql [266B] main/input.gql [16149B] prelude.gql [84989B] 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0515 17:02:48.971032   88899 collector.go:107] schema extensions wrote into \"/Users/mandarliev/Desktop/a/skild/dataconnect/.dataconnect/schema\"\nGenerated sources: main/relation.gql [6578B] main/query.gql [2404B] main/mutation.gql [6444B] main/implicit.gql [266B] main/input.gql [16149B] prelude.gql [84989B] \n"}}
+[debug] [2026-05-15T14:02:48.971Z] I0515 17:02:48.971300   88899 load.go:109] Finished reloading
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0515 17:02:48.971300   88899 load.go:109] Finished reloading\n"}}
+[debug] [2026-05-15T14:02:48.972Z] I0515 17:02:48.972197   88899 dev.go:104] Listening on address (HTTP + gRPC): 127.0.0.1:9399
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0515 17:02:48.972197   88899 dev.go:104] Listening on address (HTTP + gRPC): 127.0.0.1:9399\n"}}
+[debug] [2026-05-15T14:02:48.972Z] I0515 17:02:48.972274   88899 dev.go:104] Listening on address (HTTP + gRPC): [::1]:9399
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0515 17:02:48.972274   88899 dev.go:104] Listening on address (HTTP + gRPC): [::1]:9399\n"}}
+[debug] [2026-05-15T14:02:50.981Z] [SQL Connect] Connecting to postgres://127.0.0.1:5432/skild-28e8b-database?sslmode=disable}...
+[debug] [2026-05-15T14:02:51.004Z] >>> [apiv2][query] POST http://127.0.0.1:9399/emulator/configure [none]
+[debug] [2026-05-15T14:02:51.005Z] >>> [apiv2][body] POST http://127.0.0.1:9399/emulator/configure {"connectionString":"postgres://127.0.0.1:5432/skild-28e8b-database?sslmode=disable","database":"skild-28e8b-database","serviceId":"skild-28e8b-service"}
+[debug] [2026-05-15T14:02:58.084Z] I0515 17:02:58.084345   88899 migrate.go:24] Running migration SQL:
+Step 1: CREATE EXTENSION IF NOT EXISTS "uuid-ossp"
+Step 2: CREATE TABLE "public"."user" ("clerk_id" text NOT NULL, "email" text NOT NULL, "image_url" text NULL, "username" text NOT NULL, PRIMARY KEY ("clerk_id"))
+Step 3: CREATE UNIQUE INDEX "user_clerkId_uidx" ON "public"."user" ("clerk_id")
+Step 4: CREATE TABLE "public"."skill" ("id" uuid NOT NULL DEFAULT uuid_generate_v4(), "author_clerk_id" text NOT NULL, "created_at" timestamptz NOT NULL, "description" text NOT NULL, "install_command" text NOT NULL, "prompt_config" text NOT NULL, "tags" text[] NOT NULL, "title" text NOT NULL, "usage_example" text NOT NULL, PRIMARY KEY ("id"), CONSTRAINT "skill_author_clerk_id_fkey" FOREIGN KEY ("author_clerk_id") REFERENCES "public"."user" ("clerk_id") ON DELETE CASCADE)
+Step 5: CREATE INDEX "skill_authorClerkId_idx" ON "public"."skill" ("author_clerk_id")
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0515 17:02:58.084345   88899 migrate.go:24] Running migration SQL:\nStep 1: CREATE EXTENSION IF NOT EXISTS \"uuid-ossp\"\nStep 2: CREATE TABLE \"public\".\"user\" (\"clerk_id\" text NOT NULL, \"email\" text NOT NULL, \"image_url\" text NULL, \"username\" text NOT NULL, PRIMARY KEY (\"clerk_id\"))\nStep 3: CREATE UNIQUE INDEX \"user_clerkId_uidx\" ON \"public\".\"user\" (\"clerk_id\")\nStep 4: CREATE TABLE \"public\".\"skill\" (\"id\" uuid NOT NULL DEFAULT uuid_generate_v4(), \"author_clerk_id\" text NOT NULL, \"created_at\" timestamptz NOT NULL, \"description\" text NOT NULL, \"install_command\" text NOT NULL, \"prompt_config\" text NOT NULL, \"tags\" text[] NOT NULL, \"title\" text NOT NULL, \"usage_example\" text NOT NULL, PRIMARY KEY (\"id\"), CONSTRAINT \"skill_author_clerk_id_fkey\" FOREIGN KEY (\"author_clerk_id\") REFERENCES \"public\".\"user\" (\"clerk_id\") ON DELETE CASCADE)\nStep 5: CREATE INDEX \"skill_authorClerkId_idx\" ON \"public\".\"skill\" (\"author_clerk_id\")\n"}}
+[debug] [2026-05-15T14:02:58.530Z] I0515 17:02:58.518771   88899 control.go:100] [projects/emulator/locations/emulator/services/skild-28e8b-service df34] UpdateResources(): done
+Main schema: sources: schema/schema.gql [528B] 
+Connector "example": sources: 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0515 17:02:58.518771   88899 control.go:100] [projects/emulator/locations/emulator/services/skild-28e8b-service df34] UpdateResources(): done\nMain schema: sources: schema/schema.gql [528B] \nConnector \"example\": sources: \n"}}
+[debug] [2026-05-15T14:02:58.546Z] I0515 17:02:58.545994   88899 configure_emulator.go:21] ConfigureEmulator successed
+Request: service_id:  "skild-28e8b-service"
+connection_string:  "postgres://127.0.0.1:5432/skild-28e8b-database?sslmode=disable"
+database:  "skild-28e8b-database"
+
+Response: 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0515 17:02:58.545994   88899 configure_emulator.go:21] ConfigureEmulator successed\nRequest: service_id:  \"skild-28e8b-service\"\nconnection_string:  \"postgres://127.0.0.1:5432/skild-28e8b-database?sslmode=disable\"\ndatabase:  \"skild-28e8b-database\"\n\nResponse: \n"}}
+[debug] [2026-05-15T14:02:58.550Z] <<< [apiv2][status] POST http://127.0.0.1:9399/emulator/configure 200
+[debug] [2026-05-15T14:02:58.550Z] <<< [apiv2][body] POST http://127.0.0.1:9399/emulator/configure {}
+[debug] [2026-05-15T14:02:58.550Z] [SQL Connect] Successfully connected to postgres://127.0.0.1:5432/skild-28e8b-database?sslmode=disable}
+[warn] ⚠  emulators: The Emulator UI is not starting because none of the running emulators have a UI component. {"metadata":{"emulator":{"name":"hub"},"message":"The Emulator UI is not starting because none of the running emulators have a UI component."}}
+[debug] [2026-05-15T14:02:58.570Z] >>> [apiv2][query] GET http://127.0.0.1:9399/emulator/info [none]
+[debug] [2026-05-15T14:02:58.578Z] <<< [apiv2][status] GET http://127.0.0.1:9399/emulator/info 200
+[debug] [2026-05-15T14:02:58.578Z] <<< [apiv2][body] GET http://127.0.0.1:9399/emulator/info {"version":"","services":[{"serviceId":"skild-28e8b-service","connectionString":"dbname='skild-28e8b-database' host='127.0.0.1' port='5432' sslmode='disable' dbname='skild-28e8b-database'"}]}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+└─────────────────────────────────────────────────────────────┘
+
+┌─────────────┬────────────────┐
+│ Emulator    │ Host:Port      │
+├─────────────┼────────────────┤
+│ SQL Connect │ 127.0.0.1:9399 │
+└─────────────┴────────────────┘
+  Emulator Hub host: 127.0.0.1 port: 4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
