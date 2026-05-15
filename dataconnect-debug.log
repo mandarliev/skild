@@ -1,0 +1,25 @@
+I0515 17:02:48.952762   88899 load.go:31] Reloading schema and connectors...
+I0515 17:02:48.962159   88899 control.go:100] [projects/emulator/locations/emulator/services/skild-28e8b-service 4d5e] UpdateResources(): done
+Main schema: sources: schema/schema.gql [528B] 
+Connector "example": sources: 
+E0515 17:02:48.968246   88899 load.go:95] Errors generating SDK: [connector "example"]: invalid Data Connect Connector no query found in connector
+I0515 17:02:48.971032   88899 collector.go:107] schema extensions wrote into "/Users/mandarliev/Desktop/a/skild/dataconnect/.dataconnect/schema"
+Generated sources: main/relation.gql [6578B] main/query.gql [2404B] main/mutation.gql [6444B] main/implicit.gql [266B] main/input.gql [16149B] prelude.gql [84989B] 
+I0515 17:02:48.971300   88899 load.go:109] Finished reloading
+I0515 17:02:48.972197   88899 dev.go:104] Listening on address (HTTP + gRPC): 127.0.0.1:9399
+I0515 17:02:48.972274   88899 dev.go:104] Listening on address (HTTP + gRPC): [::1]:9399
+I0515 17:02:58.084345   88899 migrate.go:24] Running migration SQL:
+Step 1: CREATE EXTENSION IF NOT EXISTS "uuid-ossp"
+Step 2: CREATE TABLE "public"."user" ("clerk_id" text NOT NULL, "email" text NOT NULL, "image_url" text NULL, "username" text NOT NULL, PRIMARY KEY ("clerk_id"))
+Step 3: CREATE UNIQUE INDEX "user_clerkId_uidx" ON "public"."user" ("clerk_id")
+Step 4: CREATE TABLE "public"."skill" ("id" uuid NOT NULL DEFAULT uuid_generate_v4(), "author_clerk_id" text NOT NULL, "created_at" timestamptz NOT NULL, "description" text NOT NULL, "install_command" text NOT NULL, "prompt_config" text NOT NULL, "tags" text[] NOT NULL, "title" text NOT NULL, "usage_example" text NOT NULL, PRIMARY KEY ("id"), CONSTRAINT "skill_author_clerk_id_fkey" FOREIGN KEY ("author_clerk_id") REFERENCES "public"."user" ("clerk_id") ON DELETE CASCADE)
+Step 5: CREATE INDEX "skill_authorClerkId_idx" ON "public"."skill" ("author_clerk_id")
+I0515 17:02:58.518771   88899 control.go:100] [projects/emulator/locations/emulator/services/skild-28e8b-service df34] UpdateResources(): done
+Main schema: sources: schema/schema.gql [528B] 
+Connector "example": sources: 
+I0515 17:02:58.545994   88899 configure_emulator.go:21] ConfigureEmulator successed
+Request: service_id:  "skild-28e8b-service"
+connection_string:  "postgres://127.0.0.1:5432/skild-28e8b-database?sslmode=disable"
+database:  "skild-28e8b-database"
+
+Response: 
